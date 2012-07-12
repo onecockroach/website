@@ -22,10 +22,10 @@
 					<h1>Unhosted</h1>
 					<h2>Freedom from web 2.0's monopoly platforms</h2>
 					<p id="intro">
-						<strong>Unhosted web apps are web apps without servers.</strong> This makes them safer to use than hosted web apps. They're also easier to develop and more resilient.
+						<strong>Unhosted web apps are web apps without servers.</strong> This makes them safer to use than both server-side and ajax-based web apps. They're also easier to develop and more resilient. Available soon on <a href="https://apps.mozilla.com/search?tag=#unhosted" target="_blank">Firefox</a> and <a href="http://apps.chrome.com/search?tag=#unhosted" target="_blank">Chrome</a>.
 					</p>
 					<p>
-						To find out more, check out our <a href="http://remotestoragejs.michiel.5apps.com" target="_blank">demo</a>. You can also read our full <a href="manifesto.html">manifesto</a>, and our <a href="https://github.com/unhosted/website/wiki/" target="_blank">wiki</a>, or ask a question on our <a href="https://groups.google.com/forum/#!forum/unhosted" target="_blank">mailing list</a>.
+						To find out more, check out our <a href="http://remotestoragejs.com" target="_blank">demo</a>. You can also read our full <a href="manifesto.html">manifesto</a>, and our <a href="https://github.com/unhosted/website/wiki/" target="_blank">wiki</a>, or ask a question on our <a href="https://groups.google.com/forum/#!forum/unhosted" target="_blank">mailing list</a>.
 					</p>
 					<div id="buttons">
 						<a class="button download" href="developers.html">Developers</a>
@@ -36,7 +36,7 @@
 			</div>
 		</header>
 		<div class="clear"></div>
-		<section id="howitworks">
+		<section style="display:none" id="howitworks">
 			<div class="container_12">
 				<div id="explanation" class="grid_4">
 				<h3>How does it work?</h3>
@@ -67,16 +67,15 @@
 						<p>
 							The unhosted web architecture moves user data away from app servers. This has many advantages over the web2.0 architecture, both for users and for developers.						</p>
 						<ul>
-							<li id="dataControl"><h6>More privacy</h6><p>By letting unhosted web apps apply payload encryption to your data, you help prevent your unhosted account provider from infringing on your privacy. </p></li>
-							<li id="freeSoftware"><h6>More focus for the Web Developer</h6><p>The Web Developer can now focus on developing stunning applications without the worries of
-							having to build a world-class infrastructure behind it. This makes it feasible for small scale 
-							web applications to compete with high-profile competitors.
+							<li id="dataControl"><h6>More privacy</h6><p>Because unhosted web apps don't force the use of their servers on you, you can sync your data yourself, to a place that you trust. Dutch universities already run such a 'remote storage' service, specifically designed to be compatible with unhosted web apps.</p></li>
+							<li id="freeSoftware"><h6>Easier to publish</h6><p>The developer doesn't need to run any infrastructure.
+              This makes it feasible to publish unhosted web apps into the public domain. Once an unhosted web app is set free into the public domain, it will be available forever.
 							</p></li>
 							<li id="decentralization"><h6>Decentralization</h6><p>More robust/resilient architecture, with no Single Point of Failure - especially if combined with 
-							modern in-browser storage techniques.</p></li>
+						  peer-to-peer distribution.</p></li>
 							<li id="dataFreedom"><h6>Data freedom</h6><p>With your data living outside the app, you can switch back and forth between apps without even 
 							exporting and importing. Better than data liberation, this is personal data freedom brought to the web.</p></li>
-							<li id="scalability"><h6>Scalability</h6><p>Developers only pay for seeding the statics until ISPs and browsers cache them, so a very basic http server can scale up to serve a very popular web app for many users.</p></li>
+							<li id="scalability"><h6>Scalability</h6><p>Since apps are distributed through app stores, and each user runs their own copy of the app, while each syncing their data to their own remote storage, the scalability of your unhosted web app is basically unlimited.</p></li>
 						</ul>
 						
 						
@@ -84,12 +83,13 @@
 				</div>
 			</div> <!-- end fivereasons -->
 			<div class="sidebar grid_5">
+					<h4>Coming soon:</h4>
 				<div>
-					<h5>First Unhosted demo now online!</h5>
-					<a href="http://www.myfavouritesandwich.org" target="_blank"><img src="./css/uncompressed/img/news/demo01.png" alt="myfavouritesandwich.org" width="340" height="256"/></a>
+          <h5>Remote storage for unhosted web apps</h5>
+					<a href="http://remotestoragejs.com/" target="_blank"><img src="./css/uncompressed/img/remotestorage-icon.png" alt="remotestoragejs.com" width="340" height="256"/></a>
 				</div>
 			</div>
-			<div class="sidebar grid_5">
+			<div class="sidebar grid_5" style="display:none">
 				<div>
 					<h5>Check out the Unhosted talk at DynCon</h5>
 					<iframe src="http://player.vimeo.com/video/21109220?portrait=0" width="340" height="251" frameborder="0"></iframe>
